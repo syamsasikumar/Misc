@@ -9,9 +9,9 @@ autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buff
 
 
 "Invisible character colors
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
-highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+"highlight NonText guifg=#4a4a59
+"highlight SpecialKey guifg=#4a4a59
+"highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 filetype indent on
 
 
