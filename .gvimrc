@@ -95,7 +95,3 @@ set showbreak=..
 "Wrap line
 set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
-"pathogen
-call pathogen#infect()
-syntax on
-filetype plugin indent on
