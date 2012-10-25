@@ -35,6 +35,8 @@ colorscheme molokai
 au BufNewFile,BufRead *.inc set filetype=php
 au BufNewFile,BufRead *.install set filetype=php
 au BufNewFile,BufRead *.module set filetype=php
+au BufNewFile,BufRead *.tests set filetype=php
+au BufNewFile,BufRead *.test set filetype=php
 
 " Set mouse support
 set mouse=a
@@ -95,3 +97,7 @@ set showbreak=..
 "Wrap line
 set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
+"NERD Tree
+map <F2> :NERDTreeToggle<CR>
+
+call pathogen#infect()
