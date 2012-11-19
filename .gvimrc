@@ -100,4 +100,29 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 "NERD Tree
 map <F2> :NERDTreeToggle<CR>
 
+"Clipboard Suipport - Set to system clipboard
+set clipboard+=unnamed
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
+nnoremap <C-p> "+gP
+vnoremap <C-p> "+gP
+
 call pathogen#infect()
+
+" Automatically cd into the directory that the file is in
+autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
+
+" Necesary  for lots of cool vim things
+set nocompatible
+
+" This shows what you are typing as a command. 
+set showcmd
+
+" Folding Stuffs
+set foldmethod=marker
+
+"short tabs
+set tabline=%!ShortTabLine()
+
+"cursor line
+set cursorline
